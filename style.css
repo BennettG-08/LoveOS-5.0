@@ -115,7 +115,6 @@ body{
     color:white;
 
 }
-
 /* ======================================
             HERO
 ====================================== */
@@ -314,5 +313,188 @@ button:hover{
     font-size:1.1rem;
 
     color:#e2e8f0;
+
+}
+
+/* ======================================
+        FOOTER
+====================================== */
+
+footer{
+
+    width:100%;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#94a3b8;
+
+    font-size:.9rem;
+
+    margin-top:40px;
+
+}
+
+/* ======================================
+        ANIMACIONES
+====================================== */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.glass{
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.window{
+
+    animation:fadeUp 1s ease;
+
+}
+
+/* ======================================
+      RESPONSIVE
+====================================== */
+
+@media(max-width:900px){
+
+.topbar{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.status{
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.glass{
+
+    padding:35px 25px;
+
+}
+
+.glass h1{
+
+    font-size:2.2rem;
+
+}
+
+.glass p{
+
+    font-size:1rem;
+
+}
+
+.letter{
+
+    padding:30px 22px;
+
+}
+
+#letterContent{
+
+    font-size:1rem;
+
+    line-height:2;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.logo{
+
+    font-size:1.6rem;
+
+}
+
+.status{
+
+    font-size:.8rem;
+
+}
+
+.glass h1{
+
+    font-size:1.8rem;
+
+}
+
+.window-bar{
+
+    height:50px;
+
+}
+
+.filename{
+
+    font-size:12px;
+
+}
+
+footer{
+
+    font-size:.8rem;
+
+}
 
 }
