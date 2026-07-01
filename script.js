@@ -1,9 +1,38 @@
 function playMusic() {
   const music = document.getElementById("music");
-
   music.play().catch(() => {});
 
-  document.body.style.filter = "hue-rotate(120deg)";
+  // efecto visual fuerte
+  document.body.classList.add("active");
+
+  // mensaje dinámico
+  showActivation();
+
+  // quitar efecto después
+  setTimeout(() => {
+    document.body.classList.remove("active");
+  }, 1500);
+}
+
+/* mensaje de activación */
+function showActivation() {
+  const msg = document.createElement("div");
+  msg.innerText = "✔ CONEXIÓN ACTIVADA";
+  msg.style.position = "fixed";
+  msg.style.top = "10px";
+  msg.style.right = "10px";
+  msg.style.color = "#00ff88";
+  msg.style.fontFamily = "monospace";
+  msg.style.background = "black";
+  msg.style.border = "1px solid #00ff88";
+  msg.style.padding = "10px";
+  msg.style.boxShadow = "0 0 15px #00ff88";
+
+  document.body.appendChild(msg);
+
+  setTimeout(() => {
+    msg.remove();
+  }, 2000);
 }
 
 /* partículas */
