@@ -2,13 +2,10 @@ function playMusic() {
   const music = document.getElementById("music");
   music.play().catch(() => {});
 
-  // efecto visual fuerte
   document.body.classList.add("active");
 
-  // mensaje dinámico
   showActivation();
 
-  // quitar efecto después
   setTimeout(() => {
     document.body.classList.remove("active");
   }, 1500);
@@ -27,6 +24,7 @@ function showActivation() {
   msg.style.border = "1px solid #00ff88";
   msg.style.padding = "10px";
   msg.style.boxShadow = "0 0 15px #00ff88";
+  msg.style.zIndex = "9999";
 
   document.body.appendChild(msg);
 
