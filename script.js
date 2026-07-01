@@ -1,7 +1,8 @@
-
 function playMusic() {
   const music = document.getElementById("music");
+
   music.play().catch(() => {});
+
   document.body.style.filter = "hue-rotate(120deg)";
 }
 
@@ -22,4 +23,4 @@ function createParticle() {
   }, 5000);
 }
 
-setInterval(createParticle, 150);
+setInterval(createParticle, 120);
