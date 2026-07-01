@@ -1,109 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoveOS ❤️</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>LoveOS 5.0</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="background"></div>
+  <div class="scanlines"></div>
 
-<div id="stars"></div>
-<div id="petals"></div>
-<div id="hearts"></div>
+  <div class="terminal">
+    <p class="line">> iniciando LoveOS_5.0...</p>
+    <p class="line">> estableciendo conexión emocional...</p>
+    <p class="line">> acceso concedido ✔</p>
+  </div>
 
-<header class="topbar">
+  <div class="card">
+    <h1>💚 Mensaje cifrado</h1>
 
-    <div class="logo">
-        ❤️ LoveOS
-    </div>
+    <p>
+      No sé cómo explicarlo en palabras normales,<br>
+      así que lo voy a decir como sistema:<br><br>
 
-    <div class="status">
+      Eres el único proceso que nunca quiero cerrar.<br>
+      El único bug que no quiero corregir.<br>
+      Y la única conexión que no quiero perder.
+    </p>
 
-        <div>
-            <span>STATUS</span>
-            <strong>ONLINE</strong>
-        </div>
+    <button onclick="playMusic()">DESENCRIPTAR CORAZÓN</button>
+  </div>
 
-        <div>
-            <span>SECURITY</span>
-            <strong>AES-256</strong>
-        </div>
+  <audio id="music" src="music.mp3"></audio>
 
-        <div>
-            <span>VERSION</span>
-            <strong>5.0</strong>
-        </div>
-
-    </div>
-
-</header>
-
-<section class="hero">
-
-    <div class="glass">
-
-        <h1>Hasta el Infinito ♾️❤️</h1>
-
-        <p>
-            No es una simple carta...
-            Es un pequeño universo que construí únicamente para ti.
-        </p>
-
-        <button id="openLetter">
-            ❤️ Abrir Carta
-        </button>
-
-    </div>
-
-</section>
-
-<section id="letterWindow" class="window hidden">
-
-    <div class="window-bar">
-
-        <div class="dots">
-            <span class="red"></span>
-            <span class="yellow"></span>
-            <span class="green"></span>
-        </div>
-
-        <div class="filename">
-            carta_encriptada.txt
-        </div>
-
-    </div>
-
-    <div class="letter">
-
-        <h2>Para Ti ❤️</h2>
-
-        <div id="letterContent"></div>
-
-    </div>
-
-</section>
-
-<footer>
-
-Hecho con ❤️ exclusivamente para ti.
-
-</footer>
-
-<audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mpeg">
-</audio>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
