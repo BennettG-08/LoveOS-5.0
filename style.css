@@ -1,0 +1,318 @@
+/* ======================================
+           LOVE OS 5.0
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050816;
+    color:#fff;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* ======================================
+            FONDO
+====================================== */
+
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-5;
+
+    background:
+    radial-gradient(circle at top,#274690 0%,transparent 45%),
+    radial-gradient(circle at bottom,#4c1d95 0%,transparent 35%),
+    linear-gradient(180deg,#030712,#081021,#050816);
+}
+
+#stars,
+#petals,
+#hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+}
+
+#stars{z-index:-4;}
+#petals{z-index:-3;}
+#hearts{z-index:-2;}
+
+/* ======================================
+            HEADER
+====================================== */
+
+.topbar{
+
+    width:min(1200px,94%);
+    margin:30px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 28px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:22px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.status{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.status div{
+
+    text-align:center;
+
+}
+
+.status span{
+
+    display:block;
+
+    font-size:.75rem;
+
+    color:#94a3b8;
+
+    margin-bottom:4px;
+
+}
+
+.status strong{
+
+    font-size:1rem;
+
+    color:white;
+
+}
+
+/* ======================================
+            HERO
+====================================== */
+
+.hero{
+
+    width:min(1200px,94%);
+    margin:40px auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.glass{
+
+    width:100%;
+    max-width:850px;
+
+    padding:60px 50px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:28px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+    text-align:center;
+
+}
+
+.glass h1{
+
+    font-size:3rem;
+
+    margin-bottom:25px;
+
+    background:linear-gradient(90deg,#8ec5ff,#d29cff,#ff92c2);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.glass p{
+
+    font-size:1.2rem;
+
+    line-height:2;
+
+    color:#dbeafe;
+
+    max-width:650px;
+
+    margin:auto auto 40px;
+
+}
+
+button{
+
+    border:none;
+
+    padding:18px 42px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:linear-gradient(90deg,#38bdf8,#8b5cf6,#ec4899);
+
+    transition:.35s;
+
+    box-shadow:0 0 30px rgba(56,189,248,.35);
+
+}
+
+button:hover{
+
+    transform:translateY(-4px) scale(1.05);
+
+    box-shadow:
+    0 0 20px #38bdf8,
+    0 0 40px #8b5cf6,
+    0 0 60px #ec4899;
+
+}
+
+/* ======================================
+          VENTANA CARTA
+====================================== */
+
+.window{
+
+    width:min(1000px,94%);
+
+    margin:40px auto;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.window-bar{
+
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 20px;
+
+    background:rgba(255,255,255,.05);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.dots{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.dots span{
+
+    width:13px;
+
+    height:13px;
+
+    border-radius:50%;
+
+}
+
+.red{background:#ff5f57;}
+.yellow{background:#febc2e;}
+.green{background:#28c840;}
+
+.filename{
+
+    font-size:14px;
+
+    color:#94a3b8;
+
+}
+
+.letter{
+
+    padding:50px;
+
+}
+
+.letter h2{
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+#letterContent{
+
+    line-height:2.1;
+
+    font-size:1.1rem;
+
+    color:#e2e8f0;
+
+}
