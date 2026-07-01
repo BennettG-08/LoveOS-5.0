@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding-top: 40px; /* 🔥 ARREGLA TEXTO CORTADO */
   background: black;
   color: #00ff88;
   font-family: monospace;
@@ -24,15 +25,15 @@ body {
 /* terminal */
 .terminal {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 60px; /* 🔥 BAJADO PARA QUE NO SE CORTE */
+  left: 20px;
   font-size: 13px;
 }
 
 /* carta */
 .card {
   position: absolute;
-  top: 50%;
+  top: 52%; /* 🔥 CENTRADO MEJOR */
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(0,0,0,0.85);
